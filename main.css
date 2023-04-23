@@ -343,14 +343,8 @@ form button:hover {
     .produtosColunas {
         width: 1024px;
         max-width: 100%;   
-        display: block;
-    }
-    
-    #Produtos {
-        display: block;
-        margin: 0 auto;
-        align-items: center;
-        justify-content: center;
+        display: grid;
+        grid-template-columns: 50% 50%;
     }
 
     #Produtos > h2 {
@@ -360,11 +354,20 @@ form button:hover {
         width: 660px;
     }
 
+    #Produtos {
+        width: 660px;
+        margin: 0 auto;
+        align-items: center;
+        justify-content: center;
+    }
+    
     .produtosColunas {
-        display: block;
+        display: grid;
+        grid-template-columns: 50% 50%;
     }
 
     .roupasCentral {
+        width: 330px;
         display: flex;
         margin: 0 auto;
         align-items: center;
@@ -372,16 +375,16 @@ form button:hover {
     }
 
     .roupas {
-        display: block;
+        width: 330px;
         margin: 0 auto;
         align-items: center;
         justify-content: center;
     }
 
     .roupas img {
-        width: 660px;
+        width: 300px;
         max-width: 100%;
-        margin: 24px 80px;
+        margin: 24px 0;
     }
     
     .roupas h2 {
@@ -391,15 +394,15 @@ form button:hover {
         margin-left: 20px;
         font-size: 1.5em;
         width: 660px;
-        margin: 0 80px;
+        margin: 0;
     }
     
     .roupas p {
         font-family: "auster", sans-serif;
         font-weight: 500;
-        margin: 12px 80px;
+        margin: 12px 0;
         font-size: 1em;
-        width: 660px;
+        width: 300px;
     }
 
     form button {
@@ -407,10 +410,9 @@ form button:hover {
         color: #fff;
         font-family: "gelica", sans-serif;
         font-size: 1em;
-        width: 660px;
+        width: 300px;
         border: none;
         border-radius: 10px;
-        margin: 6px 80px;
+        margin: 6px 0;
     }
-    
 }
