@@ -1,0 +1,416 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    background-color: rgb(211, 175, 98);
+    border-bottom: 3px solid black;
+    padding: 30px;
+}
+
+.container header {
+    display: flex;
+    justify-content: space-between;
+    width: 1024px;
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+.container h1 {
+    font-family: "gelica", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 2em;
+}
+
+.container a {
+    font-family: "gelica", sans-serif;
+    font-weight: 700;
+    text-decoration: none;
+    color: black;
+    display: flex;
+    padding: 8px;
+    margin: 4px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+body {
+    background-color: rgb(231, 212, 175);
+}
+
+#sobreALoja {
+    width: 1024px;
+    max-width: 100%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 30% 70%;
+}
+
+#sobreALoja h2 {
+    font-family: "gelica", sans-serif;
+    font-weight: 700;
+    margin-top: 32px;
+    border-bottom: 2px solid black;
+    padding-bottom: 16px;
+    margin-left: 24px;
+}
+
+#sobreALoja img {
+    margin-top: 32px;
+    max-width: 100%;
+    margin-left: 10px;
+}
+
+.aLoja p, 
+h2 {
+    width: 660px;
+    max-width: 100%;
+}
+
+.aLoja {
+    display: flex; 
+}
+
+.aLoja p {
+    font-family: "auster", sans-serif;
+    font-weight: 500;
+    margin-left: 24px;
+    padding-top: 60px;
+    font-size: 1em;
+}
+
+.produtosColunas {
+    width: 1024px;
+    max-width: 100%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+}
+
+.roupasCentral {
+    display: flex;
+    margin: 0 auto;
+    align-items: center;
+    justify-content: center;
+}
+
+#Produtos > h2 {
+    max-width: 100%;
+    margin: 0 auto;
+    width: 990px;
+    font-family: "gelica", sans-serif;
+    font-weight: 700;
+    margin-top: 48px ;
+    margin-bottom: 24px;
+    padding-bottom: 16px;
+    border-bottom: 2px solid black;
+}
+
+.roupas {
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 24px;
+    padding-bottom: 24px;
+}
+
+.roupas img {
+    width: 220px;
+    max-width: 100%;
+    margin: 20px;
+}
+
+.roupas img:hover {
+    cursor: pointer;
+}
+
+.roupas h2 {
+    font-family: "gelica", sans-serif;
+    font-weight: 700;
+    color: rgb(80, 80, 80);
+    margin-left: 20px;
+    font-size: 1.5em;
+    width: 220px;
+}
+
+.roupas p {
+    font-family: "auster", sans-serif;
+    font-weight: 500;
+    margin: 10px 20px;
+    font-size: 1em;
+    width: 220px;
+}
+
+form button {
+    background-color: rgb(27, 134, 0);
+    color: #fff;
+    font-family: "gelica", sans-serif;
+    font-size: 1em;
+    padding: 6px;
+    width: 220px;
+    border: none;
+    border-radius: 10px;
+    margin-left: 20px;
+}
+
+form button:hover {
+    cursor: pointer;
+    background-color: #003b08;
+}
+
+@media screen and (max-width: 640px) {
+    .container {
+        display: flex;
+        margin: 0 auto;
+    }
+    .container header {
+        display: flex;
+        max-width: 90%;
+        margin: 0 auto;
+        align-items: center;
+    }
+
+    .container header h1 {
+        font-size: 2em;
+    }
+
+    .container ul {
+        display: block;
+        width: 187px;
+    }
+
+    .container li a {
+        padding-left: 20px;
+        margin: 0 auto;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 1em;
+    }
+
+   #sobreALoja {
+        display: block;
+   }
+    
+   #sobreALoja h2 {
+        font-family: "gelica", sans-serif;
+        font-weight: 700;
+        border-bottom: 2px solid black;
+        width: 327px;
+        margin: 0 auto;
+        padding-bottom: 20px;
+    }
+
+    #sobreALoja img {
+        width: 375px;
+        padding: 24px;
+        margin: 0 auto;
+        display: block;
+    }
+
+    #sobreALoja p {
+        width: 375px;
+        margin-top: 20px;
+    }
+
+    #sobreALoja div {
+        display: inline;
+    }
+
+    .aLoja p, 
+    h2 {
+        width: 375px;
+        max-width: 100%;
+    }
+
+    .aLoja {
+        display: block; 
+    }
+
+    .aLoja p {
+        font-family: "auster", sans-serif;
+        font-weight: 500;
+        margin: 0 auto;
+        padding: 20px;
+        font-size: 1em;
+    }
+    
+    #Produtos > h2 {
+        font-family: "gelica", sans-serif;
+        font-weight: 700;
+        border-bottom: 2px solid black;
+        width: 327px;
+        margin: 0 auto;
+        padding-bottom: 20px;
+    }
+
+    #Produtos {
+        display: block;
+        margin: 0 auto;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .produtosColunas {
+        display: block;
+    }
+
+    .roupasCentral {
+        display: flex;
+        margin: 0 auto;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .roupas {
+        margin-bottom: 12px;
+        padding-bottom: 12px;
+    }
+
+    .roupas img {
+        width: 327px;
+        max-width: 100%;
+        margin: 24px;
+    }
+    
+    .roupas h2 {
+        font-family: "gelica", sans-serif;
+        font-weight: 700;
+        color: rgb(80, 80, 80);
+        margin-left: 20px;
+        font-size: 1.5em;
+        width: 327px;
+    }
+    
+    .roupas p {
+        font-family: "auster", sans-serif;
+        font-weight: 500;
+        margin: 10px 20px;
+        font-size: 1em;
+        width: 327px;
+    }
+
+    form button {
+        background-color: rgb(27, 134, 0);
+        color: #fff;
+        font-family: "gelica", sans-serif;
+        font-size: 1em;
+        padding: 6px;
+        width: 327px;
+        border: none;
+        border-radius: 10px;
+        margin-left: 20px;
+    }
+}
+
+@media screen and (min-width: 641px) and (max-width: 1024px) {
+    #sobreALoja {
+        max-width: 100%;
+        margin: 0 auto;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .aLoja {
+        display: block; 
+        align-items: center;
+        justify-content: center;
+    }
+
+    #sobreALoja img {
+        width: 660px;
+        padding-top: 48px;
+        margin: 0 auto; 
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .aLoja p {
+        font-family: "auster", sans-serif;
+        font-weight: 500;
+        margin: 20px;
+        padding-top: 10px;
+        font-size: 1em;
+    }
+    
+    .produtosColunas {
+        width: 1024px;
+        max-width: 100%;   
+        display: block;
+    }
+    
+    #Produtos {
+        display: block;
+        margin: 0 auto;
+        align-items: center;
+        justify-content: center;
+    }
+
+    #Produtos > h2 {
+        font-family: "gelica", sans-serif;
+        font-weight: 700;
+        border-bottom: 2px solid black;
+        width: 660px;
+    }
+
+    .produtosColunas {
+        display: block;
+    }
+
+    .roupasCentral {
+        display: flex;
+        margin: 0 auto;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .roupas {
+        display: block;
+        margin: 0 auto;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .roupas img {
+        width: 660px;
+        max-width: 100%;
+        margin: 24px 80px;
+    }
+    
+    .roupas h2 {
+        font-family: "gelica", sans-serif;
+        font-weight: 700;
+        color: rgb(80, 80, 80);
+        margin-left: 20px;
+        font-size: 1.5em;
+        width: 660px;
+        margin: 0 80px;
+    }
+    
+    .roupas p {
+        font-family: "auster", sans-serif;
+        font-weight: 500;
+        margin: 12px 80px;
+        font-size: 1em;
+        width: 660px;
+    }
+
+    form button {
+        background-color: rgb(27, 134, 0);
+        color: #fff;
+        font-family: "gelica", sans-serif;
+        font-size: 1em;
+        width: 660px;
+        border: none;
+        border-radius: 10px;
+        margin: 6px 80px;
+    }
+    
+}
